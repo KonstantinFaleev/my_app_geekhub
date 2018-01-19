@@ -5,4 +5,36 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+#AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+
+Product.delete_all
+
+Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+                description:
+                    %{<p>
+Ruby is the fastest growing and most exciting dynamic language
+out there. If you need to get working programs delivered fast,
+you should add Ruby to your toolbox.
+</p>},
+                image: 'ruby.jpg',
+                price: 49.95)
+Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+                description:
+                    %{<p>
+Ruby is the fastest growing and most exciting dynamic language
+out there. If you need to get working programs delivered fast,
+you should add Ruby to your toolbox.
+</p>},
+                image: 'ruby.jpg',
+                price: 49.95)
+
+Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+                description:
+                    %{<p>
+Ruby is the fastest growing and most exciting dynamic language
+out there. If you need to get working programs delivered fast,
+you should add Ruby to your toolbox.
+</p>},
+                image: 'ruby.jpg',
+                price: 49.95)
+
