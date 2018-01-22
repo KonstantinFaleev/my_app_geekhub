@@ -12,6 +12,7 @@ class LineItemsController < InheritedResources::Base
         format.json { render :show,
                              status: :created, location: @line_item }
       else
+
         format.html { render :new }
         format.json { render json: @line_item.errors,
                              status: :unprocessable_entity }
