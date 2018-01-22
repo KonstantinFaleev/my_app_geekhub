@@ -16,4 +16,4 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require jquery-ui/effect-blind
+//= require jquery-ui/effects/effect-blind
