@@ -4,8 +4,10 @@
   <% @products.each do |product| %>
         <% cache product do %>
             <div class="entry">
-      <%= image_tag(product.image) %>
-      <h3><%= product.title %></h3>
+              <td><%= link_to product_path(product) do %>
+                  <%= image_tag(product.image) %>
+                <% end %>
+      <h3><%= link_to(product.title, product_path(product)) %></h3>
       <%= sanitize(product.description) %>
       <div class="price_line">
         <span class="price"><%= number_to_currency(product.price) %></span>
