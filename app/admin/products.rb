@@ -1,10 +1,10 @@
 ActiveAdmin.register Product do
-  ActiveAdmin.register Product do
     permit_params :title, :description, :price, images: []
 
     index do
       selectable_column
       id_column
+
       column :title
       column :price
       column :description
